@@ -4,6 +4,7 @@ pipeline {
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
         DBT_PROJECT_DIR = 'workforce_intel_platform'
+        PATH = "/var/jenkins_home/.local/bin:${env.PATH}"
     }
 
     stages {
@@ -18,9 +19,9 @@ pipeline {
             steps {
                 echo 'Installing DBT and dependencies...'
                 sh '''
-                    python3 -m pip install dbt-athena-community --break-system-packages || \
-                    python3 -m pip install dbt-athena-community
-                    python3 -m dbt --version
+                    python3 -m pip install dbt-athena-community --user
+                    export PATH="/var/jenkins_home/.local/bin:$PATH"
+                    dbt --version
                 '''
             }
         }
@@ -52,8 +53,9 @@ PROFILE
             steps {
                 echo 'Validating DBT connection...'
                 sh '''
+                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    python3 -m dbt debug
+                    dbt debug
                 '''
             }
         }
@@ -62,8 +64,9 @@ PROFILE
             steps {
                 echo 'Building DBT models...'
                 sh '''
+                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    python3 -m dbt build
+                    dbt build
                 '''
             }
         }
@@ -72,8 +75,9 @@ PROFILE
             steps {
                 echo 'Running DBT tests...'
                 sh '''
+                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    python3 -m dbt test
+                    dbt test
                 '''
             }
         }
@@ -82,8 +86,9 @@ PROFILE
             steps {
                 echo 'Generating DBT documentation...'
                 sh '''
+                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    python3 -m dbt docs generate
+                    dbt docs generate
                 '''
             }
         }

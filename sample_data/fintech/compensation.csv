@@ -1,0 +1,51 @@
+employee_id,employee_name,department,job_band,location,employment_type,base_salary,bonus_amount,equity_value,effective_date,currency,domain
+FIN-0001,Employee_1,Marketing,L3,San Francisco,Full-Time,107876,6028,36559,2025-05-14,USD,fintech
+FIN-0002,Employee_2,Sales,L3,Remote,Part-Time,110418,12454,706,2025-04-06,USD,fintech
+FIN-0003,Employee_3,Finance,L5,Remote,Contract,157876,19830,24774,2025-05-14,USD,fintech
+FIN-0004,Employee_4,HR,L5,Austin,Full-Time,173431,16702,30141,2023-04-16,USD,fintech
+FIN-0005,Employee_5,Finance,L1,Austin,Contract,65577,3256,12813,2023-05-02,USD,fintech
+FIN-0006,Employee_6,Engineering,L6,San Francisco,Full-Time,198770,30816,2692,2025-11-17,USD,fintech
+FIN-0007,Employee_7,Operations,L4,Remote,Contract,129854,22864,35098,2023-11-26,USD,fintech
+FIN-0008,Employee_8,HR,L3,New York,Full-Time,106249,18713,33544,2025-12-22,USD,fintech
+FIN-0009,Employee_9,Marketing,L2,Chicago,Full-Time,87243,13375,8433,2025-08-21,USD,fintech
+FIN-0010,Employee_10,Marketing,L6,Chicago,Full-Time,211863,20814,32706,2023-08-04,USD,fintech
+FIN-0011,Employee_11,Finance,L1,Remote,Full-Time,70488,11517,998,2024-11-08,USD,fintech
+FIN-0012,Employee_12,Operations,L3,New York,Part-Time,110966,15122,10034,2025-07-21,USD,fintech
+FIN-0013,Employee_13,Sales,L3,New York,Part-Time,99112,5011,36683,2025-10-20,USD,fintech
+FIN-0014,Employee_14,Marketing,L1,Remote,Part-Time,68912,6284,29970,2023-01-06,USD,fintech
+FIN-0015,Employee_15,Engineering,L2,New York,Part-Time,83224,9725,16692,2024-10-24,USD,fintech
+FIN-0016,Employee_16,Finance,L2,San Francisco,Part-Time,79953,8271,14120,2024-07-29,USD,fintech
+FIN-0017,Employee_17,HR,L1,Austin,Part-Time,66222,7072,27254,2024-02-04,USD,fintech
+FIN-0018,Employee_18,Engineering,L2,New York,Contract,76421,14866,29029,2023-12-30,USD,fintech
+FIN-0019,Employee_19,Sales,L1,Remote,Full-Time,55562,8391,11341,2023-02-18,USD,fintech
+FIN-0020,Employee_20,Marketing,L6,Austin,Part-Time,202096,23913,53943,2024-11-04,USD,fintech
+FIN-0021,Employee_21,Finance,L6,Remote,Contract,202043,13328,11063,2025-09-10,USD,fintech
+FIN-0022,Employee_22,Finance,L2,New York,Contract,78753,9566,12320,2023-08-16,USD,fintech
+FIN-0023,Employee_23,HR,L1,New York,Full-Time,56110,3227,27347,2023-07-28,USD,fintech
+FIN-0024,Employee_24,Operations,L3,Chicago,Part-Time,101238,16285,32341,2023-02-19,USD,fintech
+FIN-0025,Employee_25,HR,L5,Chicago,Full-Time,157447,17554,41612,2024-07-19,USD,fintech
+FIN-0026,Employee_26,Operations,L3,Remote,Part-Time,96123,16368,18038,2024-06-28,USD,fintech
+FIN-0027,Employee_27,Finance,L1,Austin,Full-Time,62233,7963,11515,2023-05-01,USD,fintech
+FIN-0028,Employee_28,Finance,L1,Austin,Full-Time,72014,11257,12547,2024-02-07,USD,fintech
+FIN-0029,Employee_29,Marketing,L2,Remote,Part-Time,79458,4427,39640,2023-04-03,USD,fintech
+FIN-0030,Employee_30,Engineering,L4,Austin,Contract,127754,12421,14806,2023-02-01,USD,fintech
+FIN-0031,Employee_31,Engineering,L6,San Francisco,Part-Time,210858,16764,79188,2023-09-30,USD,fintech
+FIN-0032,Employee_32,Finance,L4,New York,Contract,125832,7530,25409,2024-12-06,USD,fintech
+FIN-0033,Employee_33,Finance,L3,Austin,Part-Time,113408,13311,33713,2023-11-03,USD,fintech
+FIN-0034,Employee_34,Engineering,L3,San Francisco,Full-Time,99673,19350,43815,2023-01-27,USD,fintech
+FIN-0035,Employee_35,Marketing,L4,Chicago,Part-Time,133256,6550,17760,2023-02-12,USD,fintech
+FIN-0036,Employee_36,Finance,L2,New York,Part-Time,88921,10212,30994,2024-10-01,USD,fintech
+FIN-0037,Employee_37,Finance,L5,Chicago,Part-Time,167498,13239,12088,2023-05-05,USD,fintech
+FIN-0038,Employee_38,Operations,L4,San Francisco,Part-Time,129788,18182,19436,2024-10-03,USD,fintech
+FIN-0039,Employee_39,HR,L3,Chicago,Contract,112858,17974,41901,2024-05-30,USD,fintech
+FIN-0040,Employee_40,HR,L5,Austin,Contract,172785,9464,68381,2025-12-17,USD,fintech
+FIN-0041,Employee_41,Finance,L2,New York,Part-Time,78698,15564,10834,2024-05-14,USD,fintech
+FIN-0042,Employee_42,Operations,L1,New York,Full-Time,71496,11730,21432,2024-12-03,USD,fintech
+FIN-0043,Employee_43,HR,L2,New York,Contract,92308,4800,30539,2023-07-25,USD,fintech
+FIN-0044,Employee_44,Operations,L2,New York,Contract,82641,14987,562,2024-03-05,USD,fintech
+FIN-0045,Employee_45,Sales,L4,San Francisco,Part-Time,137511,10583,18065,2024-11-18,USD,fintech
+FIN-0046,Employee_46,Engineering,L4,New York,Full-Time,134716,7479,521,2024-01-02,USD,fintech
+FIN-0047,Employee_47,Operations,L2,New York,Contract,89048,14166,9796,2023-04-09,USD,fintech
+FIN-0048,Employee_48,Operations,L3,Remote,Full-Time,97398,9643,2536,2023-06-22,USD,fintech
+FIN-0049,Employee_49,HR,L6,San Francisco,Full-Time,213344,35342,53031,2025-09-14,USD,fintech
+FIN-0050,Employee_50,Finance,L2,Chicago,Full-Time,76290,13202,23622,2025-06-09,USD,fintech

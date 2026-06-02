@@ -1,0 +1,51 @@
+employee_id,employee_name,department,job_band,location,employment_type,base_salary,bonus_amount,equity_value,effective_date,currency,domain
+ECO-0001,Employee_1,Engineering,L3,Remote,Contract,107580,19631,7222,2023-08-26,USD,ecommerce
+ECO-0002,Employee_2,Marketing,L6,New York,Part-Time,213036,36834,92212,2024-03-30,USD,ecommerce
+ECO-0003,Employee_3,Finance,L6,Remote,Part-Time,206027,36765,23528,2024-12-01,USD,ecommerce
+ECO-0004,Employee_4,Marketing,L3,New York,Part-Time,110453,6352,33159,2025-02-08,USD,ecommerce
+ECO-0005,Employee_5,Engineering,L3,San Francisco,Full-Time,95486,18070,3613,2024-08-27,USD,ecommerce
+ECO-0006,Employee_6,HR,L5,New York,Contract,166905,31322,56282,2023-09-03,USD,ecommerce
+ECO-0007,Employee_7,Finance,L5,Austin,Part-Time,174948,18483,79239,2025-03-12,USD,ecommerce
+ECO-0008,Employee_8,Finance,L1,Austin,Contract,72898,4608,29030,2024-04-11,USD,ecommerce
+ECO-0009,Employee_9,Marketing,L1,Chicago,Full-Time,70046,9391,15395,2023-01-16,USD,ecommerce
+ECO-0010,Employee_10,Sales,L1,Remote,Part-Time,59540,5401,22663,2024-11-26,USD,ecommerce
+ECO-0011,Employee_11,HR,L2,Remote,Contract,91812,15433,4314,2024-04-04,USD,ecommerce
+ECO-0012,Employee_12,Sales,L6,Remote,Full-Time,214704,35846,86065,2025-01-12,USD,ecommerce
+ECO-0013,Employee_13,Sales,L1,Chicago,Part-Time,55293,6660,26725,2025-11-29,USD,ecommerce
+ECO-0014,Employee_14,Engineering,L4,Austin,Full-Time,125389,18799,26416,2024-06-06,USD,ecommerce
+ECO-0015,Employee_15,Marketing,L1,San Francisco,Contract,62456,8921,3765,2024-06-19,USD,ecommerce
+ECO-0016,Employee_16,HR,L3,Chicago,Part-Time,97988,8448,4471,2023-03-14,USD,ecommerce
+ECO-0017,Employee_17,Operations,L1,New York,Contract,64489,9788,10913,2023-08-03,USD,ecommerce
+ECO-0018,Employee_18,Finance,L2,San Francisco,Part-Time,89614,9536,11195,2025-11-01,USD,ecommerce
+ECO-0019,Employee_19,Marketing,L3,Austin,Contract,111386,14136,4758,2025-06-04,USD,ecommerce
+ECO-0020,Employee_20,Finance,L5,San Francisco,Part-Time,158199,13325,40052,2023-03-11,USD,ecommerce
+ECO-0021,Employee_21,Operations,L2,Austin,Contract,78216,6104,26450,2025-11-29,USD,ecommerce
+ECO-0022,Employee_22,Engineering,L5,Remote,Part-Time,170865,18134,58596,2024-08-07,USD,ecommerce
+ECO-0023,Employee_23,Engineering,L6,New York,Contract,201858,26791,84779,2023-08-04,USD,ecommerce
+ECO-0024,Employee_24,Engineering,L2,Austin,Part-Time,79502,15185,26305,2025-04-03,USD,ecommerce
+ECO-0025,Employee_25,HR,L1,Chicago,Part-Time,61589,4297,28987,2025-09-12,USD,ecommerce
+ECO-0026,Employee_26,Finance,L5,New York,Contract,164272,17093,15290,2024-08-07,USD,ecommerce
+ECO-0027,Employee_27,HR,L1,Austin,Full-Time,65157,3929,10937,2023-02-28,USD,ecommerce
+ECO-0028,Employee_28,HR,L4,Chicago,Part-Time,135942,25139,19992,2023-08-27,USD,ecommerce
+ECO-0029,Employee_29,Finance,L5,Remote,Full-Time,165261,13907,78462,2025-11-27,USD,ecommerce
+ECO-0030,Employee_30,Sales,L5,Chicago,Part-Time,170675,25646,41666,2024-11-24,USD,ecommerce
+ECO-0031,Employee_31,Sales,L3,San Francisco,Contract,109439,11006,13572,2024-05-29,USD,ecommerce
+ECO-0032,Employee_32,HR,L1,San Francisco,Part-Time,63468,8608,27166,2023-03-01,USD,ecommerce
+ECO-0033,Employee_33,Engineering,L2,New York,Part-Time,75649,15906,8383,2025-10-24,USD,ecommerce
+ECO-0034,Employee_34,HR,L2,San Francisco,Full-Time,88334,5654,26673,2025-03-22,USD,ecommerce
+ECO-0035,Employee_35,Sales,L4,Remote,Full-Time,130081,16132,26432,2025-03-19,USD,ecommerce
+ECO-0036,Employee_36,HR,L1,Chicago,Contract,65755,5440,1301,2025-06-15,USD,ecommerce
+ECO-0037,Employee_37,Engineering,L4,Austin,Full-Time,134740,24603,28367,2025-07-27,USD,ecommerce
+ECO-0038,Employee_38,Operations,L1,San Francisco,Full-Time,67808,8899,19903,2025-09-11,USD,ecommerce
+ECO-0039,Employee_39,HR,L5,Remote,Part-Time,158565,22647,18993,2024-12-15,USD,ecommerce
+ECO-0040,Employee_40,Marketing,L5,Chicago,Contract,173863,13346,45076,2024-04-18,USD,ecommerce
+ECO-0041,Employee_41,HR,L6,Austin,Contract,207435,26468,33811,2025-08-19,USD,ecommerce
+ECO-0042,Employee_42,HR,L5,Chicago,Contract,163753,8532,78980,2023-09-25,USD,ecommerce
+ECO-0043,Employee_43,Sales,L3,San Francisco,Full-Time,107330,12107,5105,2023-01-09,USD,ecommerce
+ECO-0044,Employee_44,Engineering,L6,New York,Full-Time,207308,39196,72635,2025-02-22,USD,ecommerce
+ECO-0045,Employee_45,Sales,L4,New York,Full-Time,133703,18303,16105,2025-01-13,USD,ecommerce
+ECO-0046,Employee_46,Engineering,L4,San Francisco,Full-Time,142486,12369,46253,2025-05-05,USD,ecommerce
+ECO-0047,Employee_47,Operations,L4,Austin,Full-Time,139181,18604,13263,2025-01-18,USD,ecommerce
+ECO-0048,Employee_48,Sales,L4,Austin,Part-Time,135562,9739,34673,2023-07-26,USD,ecommerce
+ECO-0049,Employee_49,Operations,L2,Austin,Contract,84986,15252,12855,2024-02-11,USD,ecommerce
+ECO-0050,Employee_50,Sales,L6,New York,Full-Time,212125,31343,94957,2023-06-03,USD,ecommerce

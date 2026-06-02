@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
         DBT_PROJECT_DIR = 'workforce_intel_platform'
-        PATH = "/var/jenkins_home/.local/bin:${env.PATH}"
+        VENV_PATH = '/var/jenkins_home/dbt-venv'
     }
 
     stages {
@@ -17,11 +17,12 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                echo 'Installing DBT and dependencies...'
+                echo 'Setting up Python virtual environment and installing DBT...'
                 sh '''
-                    python3 -m pip install dbt-athena-community --user
-                    export PATH="/var/jenkins_home/.local/bin:$PATH"
-                    dbt --version
+                    python3 -m venv $VENV_PATH
+                    $VENV_PATH/bin/pip install --upgrade pip
+                    $VENV_PATH/bin/pip install dbt-athena-community
+                    $VENV_PATH/bin/dbt --version
                 '''
             }
         }
@@ -53,9 +54,8 @@ PROFILE
             steps {
                 echo 'Validating DBT connection...'
                 sh '''
-                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    dbt debug
+                    $VENV_PATH/bin/dbt debug
                 '''
             }
         }
@@ -64,9 +64,8 @@ PROFILE
             steps {
                 echo 'Building DBT models...'
                 sh '''
-                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    dbt build
+                    $VENV_PATH/bin/dbt build
                 '''
             }
         }
@@ -75,9 +74,8 @@ PROFILE
             steps {
                 echo 'Running DBT tests...'
                 sh '''
-                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    dbt test
+                    $VENV_PATH/bin/dbt test
                 '''
             }
         }
@@ -86,9 +84,8 @@ PROFILE
             steps {
                 echo 'Generating DBT documentation...'
                 sh '''
-                    export PATH="/var/jenkins_home/.local/bin:$PATH"
                     cd ${DBT_PROJECT_DIR}
-                    dbt docs generate
+                    $VENV_PATH/bin/dbt docs generate
                 '''
             }
         }

@@ -18,8 +18,9 @@ pipeline {
             steps {
                 echo 'Installing DBT and dependencies...'
                 sh '''
-                    pip install dbt-athena-community --break-system-packages
-                    dbt --version
+                    python3 -m pip install dbt-athena-community --break-system-packages || \
+                    python3 -m pip install dbt-athena-community
+                    python3 -m dbt --version
                 '''
             }
         }
@@ -52,7 +53,7 @@ PROFILE
                 echo 'Validating DBT connection...'
                 sh '''
                     cd ${DBT_PROJECT_DIR}
-                    dbt debug
+                    python3 -m dbt debug
                 '''
             }
         }
@@ -62,7 +63,7 @@ PROFILE
                 echo 'Building DBT models...'
                 sh '''
                     cd ${DBT_PROJECT_DIR}
-                    dbt build
+                    python3 -m dbt build
                 '''
             }
         }
@@ -72,7 +73,7 @@ PROFILE
                 echo 'Running DBT tests...'
                 sh '''
                     cd ${DBT_PROJECT_DIR}
-                    dbt test
+                    python3 -m dbt test
                 '''
             }
         }
@@ -82,7 +83,7 @@ PROFILE
                 echo 'Generating DBT documentation...'
                 sh '''
                     cd ${DBT_PROJECT_DIR}
-                    dbt docs generate
+                    python3 -m dbt docs generate
                 '''
             }
         }

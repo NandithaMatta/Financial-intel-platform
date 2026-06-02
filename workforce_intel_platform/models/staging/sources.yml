@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: fintech_raw
+    database: awsdatacatalog
+    schema: wip_fintech_raw
+    description: "Raw fintech compensation data ingested via Glue ELT pipeline"
+    freshness:
+      warn_after: {count: 6, period: hour}
+      error_after: {count: 24, period: hour}
+    tables:
+      - name: compensation
+        description: "Raw employee compensation records from fintech domain"
+      - name: headcount
+        description: "Raw headcount and org structure data"
+      - name: payroll
+        description: "Raw payroll processing records"
+
+  - name: ecommerce_raw
+    database: awsdatacatalog
+    schema: wip_ecommerce_raw
+    description: "Raw e-commerce workforce data ingested via Glue ELT pipeline"
+    freshness:
+      warn_after: {count: 6, period: hour}
+      error_after: {count: 24, period: hour}
+    tables:
+      - name: compensation
+        description: "Raw employee compensation records from e-commerce domain"
+      - name: headcount
+        description: "Raw headcount and org structure data"
+      - name: payroll
+        description: "Raw payroll processing records"
+
+  - name: healthcare_raw
+    database: awsdatacatalog
+    schema: wip_healthcare_raw
+    description: "Raw healthcare compensation data ingested via Glue ELT pipeline"
+    freshness:
+      warn_after: {count: 6, period: hour}
+      error_after: {count: 24, period: hour}
+    tables:
+      - name: compensation
+        description: "Raw employee compensation records from healthcare domain"
+      - name: headcount
+        description: "Raw headcount and org structure data"
+      - name: payroll
+        description: "Raw payroll processing records"

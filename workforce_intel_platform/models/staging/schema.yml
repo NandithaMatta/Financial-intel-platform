@@ -1,0 +1,84 @@
+
+version: 2
+
+models:
+  - name: stg_fintech__compensation
+    description: "Cleaned and typed fintech compensation data"
+    columns:
+      - name: employee_id
+        description: "Unique employee identifier"
+        tests:
+          - not_null
+          - unique
+      - name: base_salary
+        description: "Employee base salary in USD"
+        tests:
+          - not_null
+      - name: domain
+        description: "Source domain"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['fintech']
+      - name: employment_type
+        description: "Type of employment"
+        tests:
+          - accepted_values:
+              values: ['Full-Time', 'Part-Time', 'Contract']
+
+  - name: stg_ecommerce__compensation
+    description: "Cleaned and typed ecommerce compensation data"
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+          - unique
+      - name: base_salary
+        tests:
+          - not_null
+      - name: domain
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['ecommerce']
+
+  - name: stg_healthcare__compensation
+    description: "Cleaned and typed healthcare compensation data"
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+          - unique
+      - name: base_salary
+        tests:
+          - not_null
+      - name: domain
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['healthcare']
+
+  - name: stg_fintech__headcount
+    description: "Cleaned fintech headcount data"
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+      - name: is_active
+        tests:
+          - not_null
+
+  - name: stg_fintech__payroll
+    description: "Cleaned fintech payroll data"
+    columns:
+      - name: payroll_id
+        tests:
+          - not_null
+          - unique
+      - name: gross_pay
+        tests:
+          - not_null
+      - name: payment_status
+        tests:
+          - accepted_values:
+              values: ['Processed', 'Pending', 'Failed']

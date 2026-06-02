@@ -1,0 +1,52 @@
+
+version: 2
+
+models:
+  - name: fct_compensation
+    description: "Final compensation fact table across all domains"
+    columns:
+      - name: employee_id
+        description: "Unique employee identifier"
+        tests:
+          - not_null
+      - name: total_compensation
+        description: "Total comp = base + bonus + equity"
+        tests:
+          - not_null
+      - name: domain
+        description: "Source domain"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['fintech', 'ecommerce', 'healthcare']
+      - name: base_salary
+        tests:
+          - not_null
+
+  - name: dim_employee
+    description: "Employee dimension table across all domains"
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+      - name: domain
+        tests:
+          - not_null
+
+  - name: fct_payroll
+    description: "Final payroll fact table across all domains"
+    columns:
+      - name: payroll_id
+        tests:
+          - not_null
+          - unique
+      - name: employee_id
+        tests:
+          - not_null
+      - name: gross_pay
+        tests:
+          - not_null
+      - name: payment_status
+        tests:
+          - accepted_values:
+              values: ['Processed', 'Pending', 'Failed']

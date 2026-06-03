@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: int_compensation__enriched
+    description: "Unified compensation data across all three domains (fintech, ecommerce, healthcare). Adds derived fields: total_compensation, bonus_pct_of_base, equity_pct_of_base. One row per employee per domain."
+    columns:
+      - name: employee_id
+        description: "Unique employee identifier"
+        tests:
+          - not_null
+      - name: total_compensation
+        description: "Total comp = base_salary + bonus_amount + equity_value"
+        tests:
+          - not_null
+      - name: domain
+        description: "Source domain"
+        tests:
+          - not_null
+
+  - name: int_headcount__enriched
+    description: "Unified headcount data across all three domains. Contains org structure, hire dates, and activity status."
+    columns:
+      - name: employee_id
+        description: "Unique employee identifier"
+        tests:
+          - not_null
+      - name: domain
+        description: "Source domain"
+        tests:
+          - not_null
+
+  - name: int_payroll__enriched
+    description: "Unified payroll data across all three domains. Adds derived fields: total_deductions, effective_tax_rate."
+    columns:
+      - name: payroll_id
+        description: "Unique payroll record identifier"
+        tests:
+          - not_null
+      - name: employee_id
+        description: "Employee identifier"
+        tests:
+          - not_null

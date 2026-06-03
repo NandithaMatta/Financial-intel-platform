@@ -1,9 +1,8 @@
-
 version: 2
 
 models:
   - name: stg_fintech__compensation
-    description: "Cleaned and typed fintech compensation data"
+    description: "Staged fintech compensation data — cast, renamed, deduplicated."
     columns:
       - name: employee_id
         description: "Unique employee identifier"
@@ -11,7 +10,7 @@ models:
           - not_null
           - unique
       - name: base_salary
-        description: "Employee base salary in USD"
+        description: "Annual base salary in USD"
         tests:
           - not_null
       - name: domain
@@ -21,64 +20,75 @@ models:
           - accepted_values:
               values: ['fintech']
       - name: employment_type
-        description: "Type of employment"
+        description: "Type of employment contract"
         tests:
           - accepted_values:
               values: ['Full-Time', 'Part-Time', 'Contract']
 
   - name: stg_ecommerce__compensation
-    description: "Cleaned and typed ecommerce compensation data"
+    description: "Staged e-commerce compensation data — cast, renamed, deduplicated."
     columns:
       - name: employee_id
+        description: "Unique employee identifier"
         tests:
           - not_null
           - unique
       - name: base_salary
+        description: "Annual base salary in USD"
         tests:
           - not_null
       - name: domain
+        description: "Source domain"
         tests:
           - not_null
           - accepted_values:
               values: ['ecommerce']
 
   - name: stg_healthcare__compensation
-    description: "Cleaned and typed healthcare compensation data"
+    description: "Staged healthcare compensation data — cast, renamed, deduplicated."
     columns:
       - name: employee_id
+        description: "Unique employee identifier"
         tests:
           - not_null
           - unique
       - name: base_salary
+        description: "Annual base salary in USD"
         tests:
           - not_null
       - name: domain
+        description: "Source domain"
         tests:
           - not_null
           - accepted_values:
               values: ['healthcare']
 
   - name: stg_fintech__headcount
-    description: "Cleaned fintech headcount data"
+    description: "Staged fintech headcount data — employee org structure"
     columns:
       - name: employee_id
+        description: "Unique employee identifier"
         tests:
           - not_null
       - name: is_active
+        description: "Whether employee is currently active"
         tests:
           - not_null
 
   - name: stg_fintech__payroll
-    description: "Cleaned fintech payroll data"
+    description: "Staged fintech payroll data — pay periods, gross/net pay"
     columns:
       - name: payroll_id
+        description: "Unique payroll record identifier"
         tests:
           - not_null
           - unique
       - name: gross_pay
+        description: "Gross pay for the pay period"
         tests:
           - not_null
       - name: payment_status
+        description: "Status of payment processing"
         tests:
           - accepted_values:
               values: ['Processed', 'Pending', 'Failed']
